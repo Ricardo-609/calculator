@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ricardo.calculator.MainActivity">
+
+
+    <TextView
+        android:id="@+id/ev_input"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:maxLines="3"
+        android:inputType="textPersonName"
+        android:gravity="right|bottom"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:text="0"
+        android:textSize="60sp"
+
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+        />
+
+    <TextView
+        android:id="@+id/ev_return"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="right|bottom"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:text="0"
+        android:textSize="60sp"
+        />
+
+
+    <!--        android:background="@color/black"-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="vertical"/>
+
+
+</LinearLayout>
